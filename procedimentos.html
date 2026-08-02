@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .footer-pagina {
+  padding: 20px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.botao-voltar {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px; /* Fica largura total no celular e max de 300px no PC */
+}
+
+.botao-voltar:hover {
+  background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+    <footer class="footer-pagina">
+    <button id="btnVoltar" class="botao-voltar">Voltar para a página anterior</button>
+    </footer>
+
+<script>
+document.getElementById("btnVoltar").addEventListener("click", function() {
+  history.back();
+});
+</script>   
+
+</body>
+</html>
