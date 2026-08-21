@@ -809,7 +809,7 @@
          * - EXCETUE os que tiveram Coleta Executada = "SIM".
          */
         function calcularDuplicidades(dataset) {
-            const daysWindow = parseInt(document.getElementById("dupDaysInput")?.value || "2");
+            const daysWindow = parseInt(document.getElementById("dupDaysInput")?.value || "90");
             const windowMs = daysWindow * 24 * 60 * 60 * 1000;
 
             const gruposChave = {};
